@@ -1,0 +1,87 @@
+body {
+  background: #fde2e4;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.envelope {
+  width: 300px;
+  height: 200px;
+  background: #f08080;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e57373;
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+  transform-origin: top;
+  transition: transform 1s;
+  z-index: 3;
+}
+
+.letter {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: 280px;
+  height: 260px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: top 1s;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
+
+.envelope.open .letter {
+  top: -60px;
+}
+
+.question {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background: #ff6f91;
+  color: white;
+}
+
+.no {
+  background: #ddd;
+  margin-left: 10px;
+}
+
+.hint {
+  margin-top: 15px;
+  color: #555;
+}
