@@ -31,7 +31,7 @@ I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
     if (i < message.length) {
       messageEl.innerHTML += message.charAt(i);
       i++;
-      setTimeout(typeWriter, 80); // slower speed
+      setTimeout(typeWriter, 60); // slower speed
     }
   }
 
@@ -96,4 +96,5 @@ I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
     yesVideo.parentNode.insertBefore(giftText, yesVideo.nextSibling);
   });
 });
+
 
