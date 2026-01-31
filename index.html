@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>For You 💖</title>
-  <link rel="stylesheet" href="valentine.css">
+<meta charset="UTF-8">
+<title>For You 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="valentine.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="envelope" onclick="openLetter()">
-    <div class="flap"></div>
-    <div class="letter">
-      <h2>Hi my love 💕</h2>
-      <p>
-        Every day with you feels warm, safe, and a little magical.
-        I can’t imagine anyone else I’d rather laugh, grow,
-        and fall in love with.
-      </p>
-      <p class="question">Will you be my Valentine? 🌹</p>
-      <div class="buttons">
-        <button onclick="yes()">Yes 💖</button>
-        <button class="no">No 😔</button>
-      </div>
-    </div>
-  </div>
+<!-- Overlay -->
+<div id="startOverlay">Tap to Start 💖</div>
 
-  <p class="hint">Click the envelope 💌</p>
+<!-- Intro video muted -->
+<video id="introVideo" muted>
+  <source src="0130r.mp4" type="video/mp4">
+</video>
+
+<!-- Valentine card -->
+<div id="valentineCard">
+  <h2>Hi my love 💕</h2>
+  <p id="text"></p>
+  <p class="question" id="questionText">Will you be my Valentine? 🌹</p>
+  <div class="buttons">
+    <button id="yesBtn">Yes 💖</button>
+    <button id="noBtn">No 😔</button>
+  </div>
 </div>
 
-<script src="script.js"></script>
+<!-- YES video with audio -->
+<video id="yesVideo">
+  <source src="yesvideo.mp4" type="video/mp4">
+</video>
+
+<!-- Background music -->
+<audio id="bgMusic" src="New West2.0.mp3" preload="auto" loop></audio>
+<audio id="yesMusic" src="happy1.0.mp3" preload="auto"></audio>
+
+<script src="valentine.js"></script>
 </body>
 </html>
