@@ -19,10 +19,10 @@ there is nobody in this world I'd rather spend my time with.
 I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
 
   const noTexts = [
-    "Hmm… maybe later? 😏",
-    "Are you sure? 💖",
-    "Nope 😂",
-    "Try again 😜",
+    "Oh c'monnn",
+    "Here is yes<-💖",
+    "Nope..girl 😂",
+    "Try again cmonn😜",
     "Just say yes 😘"
   ];
 
@@ -96,3 +96,4 @@ I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
     yesVideo.parentNode.insertBefore(giftText, yesVideo.nextSibling);
   });
 });
+
