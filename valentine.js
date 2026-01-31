@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let musicStarted = false;
 
   const message = `
-I know we haven't had a very good day, but regardless I WANT YOU and
+I know we haven't had very good days, but regardless I WANT YOU and
 there is nobody in this world I'd rather spend my time with.
 I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
 
@@ -87,7 +87,7 @@ I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
     yesMusic.play();
 
     const giftText = document.createElement("div");
-    giftText.textContent = "YAYYY 🎁 HERE'S A GIFT!";
+    giftText.textContent = "YAYYY YOU'RE MY VALENTINE>-< 🎁 HERE'S A GIFT!";
     giftText.style.fontSize = "2rem";
     giftText.style.color = "#ff2d6d";
     giftText.style.textAlign = "center";
@@ -96,5 +96,6 @@ I LOVE YOUUUUUUUUUUUUUUUUUU💕💕💕💕💕💕`;
     yesVideo.parentNode.insertBefore(giftText, yesVideo.nextSibling);
   });
 });
+
 
 
